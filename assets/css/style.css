@@ -5,27 +5,38 @@ html, body {
 }
 body {
   margin: 0;
+  padding: 0;
   font-family: sans-serif;
   font-size: 14px;
   color: #777;
   background-image: url('../images/geometry2.png');
   background-repeat: repeat;
 }
+p {
+  line-height: 1.5;
+}
 a {
   color: #777;
 }
 h1 {
   font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 32px;
+  font-weight: 600;
 }
 h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
   color: #4aaaa5;
   padding-bottom: 25px;
   border-bottom: 3px solid #ddd;
 }
 h3 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  font-size: 22px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
   color: #4aaaa5;
   padding-bottom: 20px;
   border-bottom: 2px solid #ddd;
@@ -44,19 +55,17 @@ h3 {
 }
 .sitename {
   float: left;
-  margin-right: 250px;
   margin-left: 20px;
-  padding: 0 30px;
+  padding: 20px 30px;
   color: #fff;
   background-color: #4aaaa5;
 }
 .navlinks {
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
   float: right;
 }
 .navlinks ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -85,15 +94,54 @@ border: none;
   width: 650px;
   float: left;
 }
+
+/*About Content*/
 .about {
   padding: 15px 25px;
   background-color: #fff;
   border: 1px solid #ddd;
 }
+.aboutme {
+  padding-top: 20px;
+}
 .self-portrait {
   float: left;
-  padding: 0 20px 10px 0;
+  padding: 20px 20px 10px 0;
   max-width: 150px;
+}
+
+/*Contact Content*/
+.contact {
+  padding: 15px 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.contact-form {
+  padding-top: 20px;
+  /*background-color: yellow;*/
+}
+input {
+  margin: 10px 0;
+  padding: 6px 0;
+  width: 99%;
+}
+textarea {
+  margin: 10px 0;
+  width: 99%;
+  border-color: #ccc;
+  height: 200px;
+}
+button {
+  position: relative;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  background: #4aaaa5;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none;
+}
+button:active {
+  top: 2px;
 }
 
 /*Sidebar Content*/
@@ -104,11 +152,11 @@ border: none;
   width: 270px;
 }
 .sidebar ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .sidebar li {
+  padding: 4px;
   display: inline-block;
 }
 .connect {
@@ -116,6 +164,9 @@ border: none;
   text-align: center;
   background-color: #fff;
   border: 1px solid #ccc;
+}
+.connect-icons {
+  padding-top: 25px;
 }
 
 /*Footer*/
