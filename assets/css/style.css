@@ -1,16 +1,16 @@
 /*Basic Styles*/
 html, body {
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  overflow-x:hidden;
-}
-body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  overflow-x:hidden;
+  overflow-y: auto;
+}
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
   color: #777;
   background-image: url('../images/geometry2.png');
-  background-repeat: repeat;
 }
 p {
   line-height: 1.5;
@@ -25,7 +25,7 @@ h1 {
 }
 h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  padding-top: 10px;
+  margin-top: 10px;
   font-size: 25px;
   font-weight: 600;
   color: #4aaaa5;
@@ -34,7 +34,7 @@ h2 {
 }
 h3 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  padding-top: 20px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
   color: #4aaaa5;
@@ -44,7 +44,7 @@ h3 {
 
 /*Main Navigation Area*/
 .nav-container {
-  width: 100%;
+  margin-bottom: 40px;
   background-color: #fff;
   border-bottom: 2px solid #ccc;
 }
@@ -55,7 +55,7 @@ h3 {
 }
 .sitename {
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 20px 30px;
   color: #fff;
   background-color: #4aaaa5;
@@ -84,41 +84,68 @@ border: none;
 
 /*Main Content Area*/
 .main {
+  overflow: auto;
   margin: 0 auto;
   width: 960px;
 }
 
 /*Page Content*/
 .content {
-  margin: 40px 10px 0 20px;
+  margin: 0 10px;
   width: 650px;
   float: left;
 }
 
 /*About Content*/
 .about {
+  margin-right: 40px;
   padding: 15px 25px;
   background-color: #fff;
   border: 1px solid #ddd;
 }
 .aboutme {
-  padding-top: 20px;
+  margin-top: 20px;
 }
-.self-portrait {
+.portrait {
   float: left;
-  padding: 20px 20px 10px 0;
+  margin: 0 20px 10px 0;
   max-width: 150px;
+}
+
+/*Portfolio Content*/
+.portfolio {
+  margin-right: 40px;
+  padding: 15px 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.portfolio-img{
+  position: relative;
+  margin: 30px 0;
+  max-width: 260px;
+}
+.portfolio-text {
+  position: absolute;
+  padding: 20px 0;
+  top: 130px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: #4aaaa5;
+  color: #fff;
+  text-align: center;
+  width: 260px;
 }
 
 /*Contact Content*/
 .contact {
+  margin-right: 40px;
   padding: 15px 25px;
   background-color: #fff;
   border: 1px solid #ddd;
 }
 .contact-form {
-  padding-top: 20px;
-  /*background-color: yellow;*/
+  margin-top: 20px;
 }
 input {
   margin: 10px 0;
@@ -147,13 +174,9 @@ button:active {
 /*Sidebar Content*/
 
 .sidebar {
-  display: inline-block;
-  margin: 40px 10px 0 0;
+  float: right;
+  margin: 0 10px;
   width: 270px;
-}
-.sidebar ul {
-  margin: 0;
-  padding: 0;
 }
 .sidebar li {
   padding: 4px;
@@ -171,9 +194,11 @@ button:active {
 
 /*Footer*/
 .footer {
+  clear: both;
+  position: absolute;
+  margin-top: 40px;
   padding: 20px 0;
-  position: fixed;
-  bottom: 0;
+	bottom:0;
   width: 100%;
   color: #ccc;
   text-align: center;
