@@ -1,12 +1,10 @@
 /*Basic Styles*/
-html, body {
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x:hidden;
-  overflow-y: auto;
 }
-body {
+html, body {
+  height: 100%;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
   color: #777;
@@ -25,7 +23,7 @@ h1 {
 }
 h2 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  margin-top: 10px;
+  padding-top: 10px;
   font-size: 25px;
   font-weight: 600;
   color: #4aaaa5;
@@ -34,17 +32,26 @@ h2 {
 }
 h3 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  margin-top: 20px;
+  padding-top: 20px;
   font-size: 20px;
   font-weight: 600;
   color: #4aaaa5;
   padding-bottom: 20px;
   border-bottom: 2px solid #ddd;
 }
+.wrapper {
+  min-height: 100%;
+}
+.main {
+  clear: both;
+  overflow: auto;
+  margin: 0 auto;
+  padding-bottom: 110px;
+  width: 960px;
+}
 
 /*Main Navigation Area*/
-.nav-container {
-  margin-bottom: 40px;
+.header {
   background-color: #fff;
   border-bottom: 2px solid #ccc;
 }
@@ -82,16 +89,9 @@ border: none;
   text-decoration: none;
 }
 
-/*Main Content Area*/
-.main {
-  overflow: auto;
-  margin: 0 auto;
-  width: 960px;
-}
-
 /*Page Content*/
 .content {
-  margin: 0 10px;
+  padding: 40px 10px;
   width: 650px;
   float: left;
 }
@@ -173,12 +173,12 @@ button:active {
 
 /*Sidebar Content*/
 
-.sidebar {
+.side {
   float: right;
-  margin: 0 10px;
+  padding: 40px 10px;
   width: 270px;
 }
-.sidebar li {
+.side li {
   padding: 4px;
   display: inline-block;
 }
@@ -195,14 +195,15 @@ button:active {
 /*Footer*/
 .footer {
   clear: both;
-  position: absolute;
-  margin-top: 40px;
-  padding: 20px 0;
-	bottom:0;
-  width: 100%;
+  position: relative;
+  margin-top: -110px;
+  height: 100px;
+  background-color: #666;
+  border-top: 10px solid #4aaaa5;
+}
+.copyright {
+  line-height: 100px;
   color: #ccc;
   text-align: center;
-  font-size: 11px;
-  background-color: #666;
-  border-top: 5px solid #4aaaa5;
+  font-size: 12px;
 }
