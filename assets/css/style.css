@@ -73,27 +73,33 @@ h3 {
   float: right;
 }
 .navlinks ul {
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 .navlinks li {
   display: inline;
   border-left: 1px solid #ccc;
-  padding: 0 20px 0 20px;
+  padding: 0 10px;
 }
 .navlinks li:first-child {
 border: none;
 }
 .navlinks a {
+  padding: 5px;
   font-size: 16px;
   text-decoration: none;
+}
+.navlinks a:hover {
+  padding: 5px;
+  color: #fff;
+  background: #4aaaa5;
 }
 
 /*Page Content*/
 .content {
+  overflow: hidden;
+  float: left;
   padding: 40px 10px;
   width: 650px;
-  float: left;
 }
 
 /*About Content*/
@@ -104,7 +110,7 @@ border: none;
   border: 1px solid #ddd;
 }
 .aboutme {
-  margin-top: 20px;
+  margin: 35px 0 20px 0;
 }
 .portrait {
   float: left;
@@ -119,15 +125,25 @@ border: none;
   background-color: #fff;
   border: 1px solid #ddd;
 }
-.portfolio-img{
-  position: relative;
-  margin: 30px 0;
-  max-width: 260px;
+.projects{
+  margin-top: 15px;
+  overflow: hidden;
 }
-.portfolio-text {
+.projects li {
+  float: left;
+  margin: 20px 0;
+  position: relative;
+  max-width: 260px;
+  max-height: 195px;
+  background: #eee;
+}
+.projects ul li:nth-child(2n) {
+    float: right;
+}
+.project {
   position: absolute;
   padding: 20px 0;
-  top: 130px;
+  top: 125px;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: 20px;
   font-weight: 600;
@@ -135,6 +151,10 @@ border: none;
   color: #fff;
   text-align: center;
   width: 260px;
+}
+.project:hover {
+  box-shadow: 0 2px 5px #777;
+  top: 124px;
 }
 
 /*Contact Content*/
@@ -145,7 +165,10 @@ border: none;
   border: 1px solid #ddd;
 }
 .contact-form {
-  margin-top: 20px;
+  margin: 35px 0 20px 0;
+}
+label {
+  font-size: 16px;
 }
 input {
   margin: 10px 0;
