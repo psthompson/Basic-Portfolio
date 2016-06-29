@@ -16,6 +16,7 @@ p {
 }
 a {
     color: #777;
+    text-decoration: none;
 }
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -67,7 +68,7 @@ h3 {
     margin-left: 10px;
     padding: 20px 30px;
     color: #fff;
-    background-color: #4aaaa5;
+    background: #4aaaa5;
 }
 .navlinks {
     padding: 10px;
@@ -138,17 +139,16 @@ h3 {
     float: left;
     margin: 20px 0;
     position: relative;
-    max-width: 260px;
-    max-height: 195px;
-    background: #eee;
+    width: 260px;
+    height: 195px;
 }
 .projects ul li:nth-child(2n) {
     float: right;
 }
 .project {
     position: absolute;
-    padding: 20px 0;
-    top: 125px;
+    padding: 15px 0;
+    top: 130px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 20px;
     font-weight: 600;
@@ -158,8 +158,11 @@ h3 {
     width: 260px;
 }
 .project:hover {
-    box-shadow: 0 2px 5px #777;
-    top: 124px;
+    box-shadow: 0 2px 2px 0 #777;
+    top: 126px;
+}
+.project-img {
+  max-width: 260px;
 }
 
 /*Contact Content*/
@@ -196,29 +199,40 @@ button {
     padding: 10px 25px 10px 25px;
     text-decoration: none;
 }
+button:hover{
+  cursor: pointer;
+}
 button:active {
     top: 2px;
 }
 
 /*Sidebar Content*/
-
 .side {
     float: right;
     padding: 40px 10px;
     width: 270px;
 }
+.side ul {
+    list-style-type: none;
+    /*padding: 4px;*/
+}
 .side li {
-    padding: 4px;
-    display: inline-block;
+  display: inline;
+}
+.side li:hover{
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.side li:nth-child(1n) {
+  margin-right: 5px;
 }
 .connect {
-    padding: 0 20px 25px 20px;
+    padding: 0 20px ;
     text-align: center;
     background-color: #fff;
     border: 1px solid #ccc;
 }
 .connect-icons {
-    padding-top: 25px;
+    padding: 35px 0
 }
 
 /*Footer*/
