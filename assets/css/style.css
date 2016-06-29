@@ -71,9 +71,8 @@ h3 {
     background: #4aaaa5;
 }
 .navlinks {
-    padding: 10px;
-    margin-top: 20px;
     float: right;
+    padding: 0 40px;
 }
 .navlinks ul {
     list-style: none;
@@ -87,14 +86,15 @@ h3 {
     border: none;
 }
 .navlinks a {
-    padding: 5px;
+    line-height: 69px;
+    height: 69px;
     font-size: 16px;
     text-decoration: none;
 }
 .navlinks a:hover {
-    padding: 5px;
-    color: #fff;
-    background: #4aaaa5;
+    display: inline-block;
+    border-bottom: 3px solid #4aaaa5;
+
 }
 
 /*Page Content*/
@@ -141,9 +141,15 @@ h3 {
     position: relative;
     width: 260px;
     height: 195px;
+    transition: all 300ms ease-in-out;
 }
 .projects ul li:nth-child(2n) {
     float: right;
+}
+.projects li:hover {
+    box-shadow: 0 27px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 300ms;
+    transform: translate(0, -10px);
 }
 .project {
     position: absolute;
@@ -156,10 +162,6 @@ h3 {
     color: #fff;
     text-align: center;
     width: 260px;
-}
-.project:hover {
-    box-shadow: 0 2px 2px 0 #777;
-    top: 126px;
 }
 .project-img {
   max-width: 260px;
@@ -212,27 +214,40 @@ button:active {
     padding: 40px 10px;
     width: 270px;
 }
-.side ul {
-    list-style-type: none;
-    /*padding: 4px;*/
-}
-.side li {
-  display: inline;
-}
-.side li:hover{
-  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.4);
-}
-.side li:nth-child(1n) {
-  margin-right: 5px;
-}
 .connect {
-    padding: 0 20px ;
+    overflow: hidden;
+    padding: 0 30px ;
     text-align: center;
     background-color: #fff;
     border: 1px solid #ccc;
 }
 .connect-icons {
     padding: 35px 0
+}
+.side ul {
+  font-size: 0; /* Eliminate spacing between inline block elements */
+  text-align: justify;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.side ul:after {
+    content: 'abc';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+.side li {
+    display: inline-block;
+}
+.side img{
+  max-width: 58px;
+  transition: all 300ms ease-in-out;
+}
+.side img:hover{
+  box-shadow: 0 17px 10px -5px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -10px);
 }
 
 /*Footer*/
