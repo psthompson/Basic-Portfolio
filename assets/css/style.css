@@ -4,7 +4,11 @@
     margin: 0;
     padding: 0;
 }
+html {
+      overflow-y: scroll;
+}
 html, body {
+
     height: 100%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
@@ -71,8 +75,9 @@ h3 {
     background: #4aaaa5;
 }
 .navlinks {
-    /*padding: 10px;*/
-    /*margin-top: 20px;*/
+    margin: 0 15px;
+    height: 72px;
+    line-height: 72px;
     float: right;
 }
 .navlinks ul {
@@ -80,19 +85,14 @@ h3 {
 }
 .navlinks li {
     display: inline;
+    padding: 0 15px;
+}
+.navlinks li~li {
     border-left: 1px solid #ccc;
-    padding: 0 10px;
-    height: 72px;
-    line-height: 72px;
-}
-.navlinks li:first-child {
-    border: none;
-}
+  }
 .navlinks a {
-    padding: 5px;
     font-size: 16px;
     text-decoration: none;
-    /*transition: all 300ms ease-in-out;*/
 }
 .navlinks a:hover {
     padding-bottom: 25px;
