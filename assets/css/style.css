@@ -62,7 +62,7 @@ h3 {
     border-bottom: 2px solid #ccc;
 }
 .nav {
-    overflow: auto;
+    overflow: hidden;
     margin: 0 auto;
     width: 960px;
 }
@@ -134,7 +134,7 @@ h3 {
 }
 .projects {
     margin-top: 15px;
-    overflow: auto;
+    overflow: hidden;
 }
 .projects li {
     float: left;
