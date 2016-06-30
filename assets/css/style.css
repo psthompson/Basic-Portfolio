@@ -10,7 +10,7 @@ html {
 html, body {
     height: 100%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #777;
     background-image: url('../images/geometry2.png');
 }
@@ -62,7 +62,7 @@ h3 {
     border-bottom: 2px solid #ccc;
 }
 .nav {
-    overflow: hidden;
+    overflow: auto;
     margin: 0 auto;
     width: 960px;
 }
@@ -101,7 +101,7 @@ h3 {
 /*Page Content*/
 
 .content {
-    overflow: hidden;
+    overflow: auto;
     float: left;
     padding: 40px 10px;
     width: 650px;
@@ -134,7 +134,7 @@ h3 {
 }
 .projects {
     margin-top: 15px;
-    overflow: hidden;
+    overflow: auto;
 }
 .projects li {
     float: left;
@@ -223,16 +223,16 @@ button:active {
     border: 1px solid #ccc;
 }
 .connect-icons {
+    overflow: auto;
     padding: 35px 0
 }
 .side ul {
     list-style-type: none;
 }
 .side li {
-    display: inline;
-}
-.side li:nth-of-type(2) {
-    margin: 0 13px;
+  float: left;
+    display: inline-block;
+    width: 33.33%;
 }
 .side img {
     max-width: 58px;
