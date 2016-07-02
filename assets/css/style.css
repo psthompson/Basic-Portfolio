@@ -205,9 +205,6 @@ button {
 button:hover {
     cursor: pointer;
 }
-button:active {
-    top: 2px;
-}
 
 /*Sidebar Content*/
 
